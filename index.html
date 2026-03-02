@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safelink - System Monitor</title>
+    <meta name="description" content="Real-time system status monitoring dashboard">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/shop" class="nav-link">Shop</a>
+                <a href="/contact" class="nav-link">Contact</a>
+                <a href="/about" class="nav-link">About Us</a>
+            </div>
+            <div class="nav-right">
+                <button class="nav-icon" aria-label="Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Safelink</h1>
+        </header>
+
+        <div class="boxes-container">
+            <div class="status-box" data-status="Secure" data-time="3 min ago" data-id="A7K9-2X4M">
+                <div class="box-header">
+                    <div class="box-name-section">
+                        <div class="box-id">A7K9-2X4M</div>
+                        <div class="edit-section" style="display: none;">
+                            <input type="text" class="edit-input" value="A7K9-2X4M">
+                            <button class="edit-btn save-btn" aria-label="Save">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </button>
+                            <button class="edit-btn cancel-btn" aria-label="Cancel">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="edit-icon" aria-label="Edit name">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="chevron-btn">
+                        <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="box-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Status:</span>
+                        <span class="status-value status-whole">Secure</span>
+                    </div>
+                    <div class="detail-time">Last checked 3 min ago</div>
+                </div>
+            </div>
+
+            <div class="status-box" data-status="Breached" data-time="5 min ago" data-id="B3N8-7Q1P">
+                <div class="box-header">
+                    <div class="box-name-section">
+                        <div class="box-id">B3N8-7Q1P</div>
+                        <div class="edit-section" style="display: none;">
+                            <input type="text" class="edit-input" value="B3N8-7Q1P">
+                            <button class="edit-btn save-btn" aria-label="Save">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </button>
+                            <button class="edit-btn cancel-btn" aria-label="Cancel">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="edit-icon" aria-label="Edit name">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="chevron-btn">
+                        <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="box-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Status:</span>
+                        <span class="status-value status-cut">Breached</span>
+                    </div>
+                    <div class="detail-time">Breached 5 min ago</div>
+                </div>
+            </div>
+
+            <div class="status-box" data-status="Secure" data-time="2 min ago" data-id="C5R6-9M2T">
+                <div class="box-header">
+                    <div class="box-name-section">
+                        <div class="box-id">C5R6-9M2T</div>
+                        <div class="edit-section" style="display: none;">
+                            <input type="text" class="edit-input" value="C5R6-9M2T">
+                            <button class="edit-btn save-btn" aria-label="Save">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </button>
+                            <button class="edit-btn cancel-btn" aria-label="Cancel">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="edit-icon" aria-label="Edit name">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="chevron-btn">
+                        <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="box-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Status:</span>
+                        <span class="status-value status-whole">Secure</span>
+                    </div>
+                    <div class="detail-time">Last checked 2 min ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
